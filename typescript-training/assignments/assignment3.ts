@@ -15,19 +15,19 @@ let studentMarks : number[] = [75, 80, 82];
 // using assignment operator to add 10 marks to each student and store it in another array
 
 
-// let updatedMarks: number[] = studentMarks.map(mark => mark + 10);
+let updatedMarks: number[] = studentMarks.map(mark => mark + 10);
 
 
-// for (let i = 0; i < studentNames.length; i++) {
-//     // console.log(`${updatedMarks[i]}`);
-//     console.log(`${studentNames[i]}: ${updatedMarks[i]}`);
-// }
+for (let i = 0; i < studentNames.length; i++) {
+    // console.log(`${updatedMarks[i]}`);
+    console.log(`${studentNames[i]}: ${updatedMarks[i]}`);
+}
 
-let updatedMark : Map<string, number> = new Map();
-updatedMark.set("Suresh", studentMarks[0]! + 10);
-updatedMark.set("Mahesh", studentMarks[1]! + 10);
-updatedMark.set("Naresh", studentMarks[2]! + 10);
+// let updatedMark : Map<string, number> = new Map();
+// updatedMark.set("Suresh", studentMarks[0]! + 10);
+// updatedMark.set("Mahesh", studentMarks[1]! + 10);
+// updatedMark.set("Naresh", studentMarks[2]! + 10);
 
-console.log(updatedMark); 
- let averageMarks : number = (updatedMark.get("Suresh")! + updatedMark.get("Mahesh")! + updatedMark.get("Naresh")!) / 3;
+// console.log(updatedMark); 
+ let averageMarks : number = (updatedMarks[0]! + updatedMarks[1]! + updatedMarks[2]!) / 3;
 console.log(`Average Marks: ${averageMarks}`);
